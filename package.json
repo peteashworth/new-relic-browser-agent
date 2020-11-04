@@ -1,6 +1,6 @@
 {
   "name": "new-relic-browser-agent",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "New Relic - Browser integration plugin",
   "author": "Pete Ashworth",
   "main": "./lib/index.js",
@@ -10,7 +10,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cross-env NODE_ENV=release babel ./src --out-dir ./lib --copy-files --ignore spec.js",
     "lint": "./node_modules/eslint/bin/eslint.js 'src/**/*.js'",
-    "lint:fix": "./node_modules/eslint/bin/eslint.js --fix 'src/**/*.js'"
+    "lint:fix": "./node_modules/eslint/bin/eslint.js --fix 'src/**/*.js'",
+    "bump:patch": "npm --no-git-tag-version version patch",
+    "bump:minor": "npm --no-git-tag-version version minor",
+    "bump:major": "npm --no-git-tag-version version major",
+    "bump:premajor": "npm --no-git-tag-version version premajor"
   },
   "repository": {
     "type": "git",
