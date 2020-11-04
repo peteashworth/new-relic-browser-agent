@@ -1,0 +1,31 @@
+{
+  "name": "new-relic-browser-agent",
+  "version": "1.0.0",
+  "description": "New Relic - Browser integration plugin",
+  "author": "Pete Ashworth",
+  "main": "./lib/index.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cross-env NODE_ENV=release babel ./src --out-dir ./lib --copy-files --ignore spec.js",
+    "lint": "./node_modules/eslint/bin/eslint.js 'src/**/*.js'",
+    "lint:fix": "./node_modules/eslint/bin/eslint.js --fix 'src/**/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/monatheoctocat/my_package.git"
+  },
+  "keywords": [
+    "new relic",
+    "browser",
+    "statistics",
+    "logger"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.2.0",
+    "eslint-config-ashworthhub": "AshworthHub/eslint-config-ashworthhub.git#master"
+  }
+}
