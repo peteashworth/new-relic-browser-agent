@@ -10,8 +10,8 @@ export default class NewRelicBrowserAgent {
 
     if (enabled) {
       return new Promise((resolve) => {
-        NewRelicBrowser.init(options);
-        NewRelicBrowser.insertScript(() => {
+        NewRelicBrowserAgent.init(options);
+        NewRelicBrowserAgent.insertScript(() => {
           resolve();
         });
       });
