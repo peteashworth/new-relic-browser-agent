@@ -1,6 +1,6 @@
 {
   "name": "new-relic-browser-agent",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "New Relic - Browser integration plugin",
   "author": "Pete Ashworth",
   "main": "./lib/index.js",

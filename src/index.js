@@ -1,4 +1,4 @@
-class NewRelicBrowserAgent {
+export default class NewRelicBrowserAgent {
   constructor(userOptions = {}) {
     const options = Object.assign({}, {
       beacon: 'bam.nr-data.net',
@@ -66,5 +66,3 @@ class NewRelicBrowserAgent {
     }
   }
 }
-
-export default NewRelicBrowser;
