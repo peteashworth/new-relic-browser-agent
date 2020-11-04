@@ -4,6 +4,7 @@
   "description": "New Relic - Browser integration plugin",
   "author": "Pete Ashworth",
   "main": "./lib/index.js",
+  "license": "MIT",
   "scripts": {
     "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/monatheoctocat/my_package.git"
+    "url": "https://github.com/AshworthHub/new-relic-browser-agent"
   },
   "keywords": [
     "new relic",
@@ -21,7 +22,6 @@
     "statistics",
     "logger"
   ],
-  "license": "MIT",
   "devDependencies": {
     "cross-env": "^5.2.0",
     "babel-cli": "^6.18.0",
